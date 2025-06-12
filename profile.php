@@ -1,5 +1,6 @@
 <?php
-	require_once("includes/header.php");
+global $con, $userLoggedIn;
+require_once("includes/header.php");
 	require_once("includes/classes/Account.php");
 	require_once("includes/classes/FormSanitizer.php");
 	require_once("includes/classes/Constants.php");
@@ -67,9 +68,15 @@
             $email = isset($_POST["email"]) ? $_POST["email"] : $user->getEmail();
             ?>
 
-            <input type="text" name="firstName" placeholder="First name" value="<?php echo $firstName; ?>">
-            <input type="text" name="lastName" placeholder="Last name" value="<?php echo $lastName; ?>">
-            <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
+            <label>
+                <input type="text" name="firstName" placeholder="First name" value="<?php echo $firstName; ?>">
+            </label>
+            <label>
+                <input type="text" name="lastName" placeholder="Last name" value="<?php echo $lastName; ?>">
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
+            </label>
 
             <div class="message">
                 <?php echo $detailsMessage; ?>
@@ -88,9 +95,15 @@
 
             <h2>Update password</h2>
 
-            <input type="password" name="oldPassword" placeholder="Old password">
-            <input type="password" name="newPassword" placeholder="New password">
-            <input type="password" name="newPassword2" placeholder="Confirm new password">
+            <label>
+                <input type="password" name="oldPassword" placeholder="Old password">
+            </label>
+            <label>
+                <input type="password" name="newPassword" placeholder="New password">
+            </label>
+            <label>
+                <input type="password" name="newPassword2" placeholder="Confirm new password">
+            </label>
 
             <div class="message">
                 <?php echo $passwordMessage; ?>

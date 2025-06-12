@@ -44,7 +44,7 @@ class SeasonProvider {
         return "<a href='watch.php?id=$id'>
                     <div class='episodeContainer'>
                       <div class='contents'>
-                        <img src='$thumbnail'>
+                        <img src='$thumbnail' alt='Episode thumbnail for $name'>
                           <div class='videoInfo'>
                             <h4>$episodeNumber. $name</h4>
                             <span>$description</span>
@@ -55,4 +55,3 @@ class SeasonProvider {
                 </a>";
     }
 }
-?>

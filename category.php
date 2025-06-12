@@ -1,5 +1,6 @@
 <?php
-    require_once('includes/header.php');
+global $con, $userLoggedIn;
+require_once('includes/header.php');
     // var_dump($userLoggedIn);
     if(!isset($_GET["id"])) {
         ErrorMessage::show("No id passed to page");

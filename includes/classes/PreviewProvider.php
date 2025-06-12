@@ -50,14 +50,14 @@
 
             $videoId = VideoProvider::getEntityVideoForUser($this->con, $id, $this->username);
             $video = new Video($this->con, $videoId);
-            
+
             $inProgress = $video->isInProgress($this->username);
             $playButtonText = $inProgress ? "Continue watching" : "Play";
             $seasonEpisode = $video->getSeasonAndEpisode();
             $subHeading = $video->isMovie() ? "" : "<h4>$seasonEpisode</h4>";
 
             return "<div class='previewContainer'>
-                        <img src='$thumbnail' class='previewImage' hidden>
+                        <img src='$thumbnail' class='previewImage' hidden alt='no image'>
                         <video autoplay muted class='previewVideo' onended='previewEnded()'>
                             <source src='$preview' type='video/mp4'>
                         </video>
@@ -72,24 +72,36 @@
                             </div>
                         </div>
                     </div>";
-           
+
         }
-        
+
         public function createEntityPreviewSquare($entity) {
             $id = $entity->getId();
             $thumbnail = $entity->getThumbnail();
             $name = $entity->getName();
-            
+
             return "<a href='entity.php?id=$id'>
                     <div class='previewContainer small'>
-                        <img src='$thumbnail' title='$name'>
+                        <img src='$thumbnail' title='$name' alt='no image '>
                     </div>
                     </a>";
         }
 
-        private function getRandomEntity() {
-           
-            $entity = EntityProvider::getTVShowEntities($this->con, null, 1);
-            return $entity[0];
+        private function getRandomEntity()
+        {
+            // First try to get a TV show
+            $entities = EntityProvider::getTVShowEntities($this->con, null, 1);
+
+            // If no TV shows found, try to get a movie
+            if (empty($entities)) {
+                $entities = EntityProvider::getMoviesEntities($this->con, null, 1);
+            }
+
+            // If still no entities, show error
+            if (empty($entities)) {
+                ErrorMessage::show("No content available to display");
+            }
+
+            return $entities[0];
         }
     }

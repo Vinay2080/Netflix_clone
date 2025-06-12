@@ -344,7 +344,7 @@ button i {
 .rightItems {
     text-align: right;
     flex: 1;
-} 
+}
 
 .rightItems i {
     color: #fff;
@@ -412,7 +412,7 @@ button i {
     color: white;
 }
 
-.alertSuccess, 
+.alertSuccess,
 .alertError {
     margin: 10px 0;
 }

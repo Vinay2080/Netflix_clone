@@ -4,7 +4,9 @@
      require_once("includes/classes/FormSanitizer.php");
      require_once("includes/classes/Account.php");
      require_once("includes/classes/Constants.php");
-     $account = new Account($con);
+$con = new PDO("mysql:host=localhost;dbname=netflix_clone", "root", "");
+
+$account = new Account($con);
 
     if(isset($_POST["submitButton"])) {
         $username = FormSanitizer::sanitizeFormUsername($_POST["username"]);
@@ -45,9 +47,9 @@
             <form method="post" action="">
 
                 <?php echo $account->getError(Constants::$loginFailed); ?>
-                <input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>" required>
-                
-                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="username"></label><input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>" required>
+
+                <label for="password"></label><input type="password" name="password" id="password" placeholder="Password" required>
                 
                 <input type="submit" name="submitButton" id="submitButton" value="SUBMIT">
           

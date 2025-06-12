@@ -1,4 +1,5 @@
 <?php
+global $con, $userLoggedIn;
 $hideNav = true;
     require_once('includes/header.php');
 

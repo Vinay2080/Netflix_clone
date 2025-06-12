@@ -78,7 +78,7 @@ class CategoryContainers {
         }
 
         if(sizeof($entities) == 0) {
-            return;
+            return "";
         }
 
         $entitiesHtml = "";
