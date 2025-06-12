@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Book-store-management-System" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Netflix_clone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OTT-Platform-Website-Clone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bookstore" vcs="Git" />
+  </component>
+</project>

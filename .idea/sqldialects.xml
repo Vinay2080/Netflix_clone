@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Book-store-management-System/bookstore.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Book-store-management-System/order.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/ajax/addDuration.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/ajax/getProgress.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/ajax/getSearchResults.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/ajax/setFinished.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/ajax/updateDuration.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/database/categories.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/database/database_name.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/database/entities.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/database/users.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/database/videos.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/entity.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/Account.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/CategoryContainers.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/Entity.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/EntityProvider.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/User.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/Video.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Netflix_clone/includes/classes/videoProvider.php" dialect="GenericSQL" />
+  </component>
+</project>
