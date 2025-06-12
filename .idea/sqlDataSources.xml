@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="179c60b8-1287-43e1-915d-1050d104db03" name="boookstore Mapping">
+      <data-sources db="5b6db37d-e38d-4a00-a2db-88774e291fc7" ddl="397765b3-d945-4f1d-8630-12209f2485e4" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="8bd21750-8a87-4933-940a-4f0405cc3156" name="netflix_clone@localhost Mapping">
+      <data-sources db="6f05765c-2f96-4e17-a69f-c44989eb6895" ddl="63b795f8-481a-463b-a5f5-3576b2e1c5b5" />
+      <scope>
+        <node kind="schema" qname="netflix_clone" />
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="397765b3-d945-4f1d-8630-12209f2485e4" />
+          <option name="name" value="boookstore (DDL)" />
+          <option name="dbmsName" value="MYSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Book-store-management-System/bookstore.sql" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+        <State>
+          <option name="id" value="63b795f8-481a-463b-a5f5-3576b2e1c5b5" />
+          <option name="name" value="netflix_clone@localhost (DDL)" />
+          <option name="dbmsName" value="UNKNOWN" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Netflix_clone/database/categories.sql" />
+              <option value="file://$PROJECT_DIR$/Netflix_clone/database/entities.sql" />
+              <option value="file://$PROJECT_DIR$/Netflix_clone/database/videos.sql" />
+              <option value="file://$PROJECT_DIR$/Netflix_clone/database/users.sql" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+        <State>
+          <option name="id" value="0cff5170-fc8a-41d8-96d4-25a896aceb42" />
+          <option name="name" value="DDL data source" />
+          <option name="dbmsName" value="UNKNOWN" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Netflix_clone/database/categories.sql" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+        <State>
+          <option name="id" value="8197f784-441e-44d8-b44b-e2e0692b4802" />
+          <option name="name" value="DDL data source" />
+          <option name="dbmsName" value="UNKNOWN" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+        <State>
+          <option name="id" value="89e83e0c-8360-4d87-a5bc-10ce8c52baa0" />
+          <option name="name" value="DDL data source" />
+          <option name="dbmsName" value="UNKNOWN" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
