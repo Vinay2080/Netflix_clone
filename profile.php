@@ -1,5 +1,6 @@
 <?php
-	require_once("includes/header.php");
+global $con, $userLoggedIn;
+require_once("includes/header.php");
 	require_once("includes/classes/Account.php");
 	require_once("includes/classes/FormSanitizer.php");
 	require_once("includes/classes/Constants.php");
@@ -88,9 +89,15 @@
 
             <h2>Update password</h2>
 
-            <input type="password" name="oldPassword" placeholder="Old password">
-            <input type="password" name="newPassword" placeholder="New password">
-            <input type="password" name="newPassword2" placeholder="Confirm new password">
+            <label>
+                <input type="password" name="oldPassword" placeholder="Old password">
+            </label>
+            <label>
+                <input type="password" name="newPassword" placeholder="New password">
+            </label>
+            <label>
+                <input type="password" name="newPassword2" placeholder="Confirm new password">
+            </label>
 
             <div class="message">
                 <?php echo $passwordMessage; ?>
