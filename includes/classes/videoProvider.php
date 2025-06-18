@@ -15,8 +15,8 @@
             $query->execute();
 
             if($query->rowCount() == 0) {
-                $query = $con->prepare("SELECT * FROM vidoes
-                                        WHERE season <= AND episode <=1
+                $query = $con->prepare("SELECT * FROM videos
+                                        WHERE season <= 1 AND episode <= 1
                                         AND id != :videoId
                                         ORDER BY views DESC LIMIT 1");
                 $query->bindValue(":videoId", $currentVideo->getId());
@@ -24,7 +24,10 @@
             }
 
             $row = $query->fetch(PDO::FETCH_ASSOC);
-            return new Video($con, $row);
+            if($row) {
+                return new Video($con, $row);
+            }
+            return null;
         }
 
         public static function getEntityVideoForUser($con, $entityId, $username) {

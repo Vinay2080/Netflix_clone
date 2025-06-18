@@ -1,9 +1,12 @@
 <?php
-    include_once("includes/header.php");
+global $userLoggedIn;
+include_once("includes/header.php");
 ?>
 	<div class="textboxContainer">
-		<input type="text" class="searchInput" placeholder="Search for something">
-	</div>
+        <label>
+            <input type="text" class="searchInput" placeholder="Search for something">
+        </label>
+    </div>
 
 	<div class="results"></div>
 
@@ -20,7 +23,7 @@
 			timer = setTimeout(function() {
 				var val = $(".searchInput").val();
 				
-				if(val != "") {
+				if(val !== "") {
 					$.post("ajax/getSearchResults.php", { term: val, username: username }, function(data) {
 						$(".results").html(data);
 					})

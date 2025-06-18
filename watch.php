@@ -1,4 +1,5 @@
 <?php
+global $con, $userLoggedIn;
 $hideNav = true;
     require_once('includes/header.php');
 
@@ -32,6 +33,7 @@ $hideNav = true;
         <source src= "<?php echo $video->getFilePath();?>"
         type="video/mp4">
     </video>
+
 </div>
 
 <script>

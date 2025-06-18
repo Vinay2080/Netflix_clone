@@ -1,6 +1,7 @@
 <?php
     class User {
-        private $con, $qlData;
+        private $con, $sqlData;
+        private $qlData;
 
         public function __construct($con, $usernmae) {
             $this->con = $con;

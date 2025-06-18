@@ -30,7 +30,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Chilix</title>
+    <title>Welcome to Chilix</title>    
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 </head>
 <body>
@@ -45,9 +45,9 @@
             <form method="post" action="">
 
                 <?php echo $account->getError(Constants::$loginFailed); ?>
-                <input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>" required>
-                
-                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="username"></label><input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>" required>
+
+                <label for="password"></label><input type="password" name="password" id="password" placeholder="Password" required>
                 
                 <input type="submit" name="submitButton" id="submitButton" value="SUBMIT">
           

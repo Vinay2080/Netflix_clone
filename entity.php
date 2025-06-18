@@ -16,4 +16,3 @@ require_once("includes/header.php");
     
     $categoryContainers = new CategoryContainers($con, $userLoggedIn);
     echo $categoryContainers->showCategory($entity->getCategoryId(), "You might also like");
-    ?>

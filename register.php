@@ -51,25 +51,25 @@
             </div>
             <form method= "post" action="">
                 <?php echo $account->getError(Constants::$firstNameCharacters); ?>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" value="<?php getInputValue("firstName")?>"required>
+                <label for="firstName"></label><input type="text" name="firstName" id="firstName" placeholder="First Name" value="<?php getInputValue("firstName")?>" required>
                 
                 <?php echo $account->getError(Constants::$lastNameCharacters); ?>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" value="<?php getInputValue("lastName")?>"required>
+                <label for="lastName"></label><input type="text" name="lastName" id="lastName" placeholder="Last Name" value="<?php getInputValue("lastName")?>" required>
                 
                 <?php echo $account->getError(Constants::$usernameCharacters); ?>
                 <?php echo $account->getError(Constants::$usernameTaken); ?>
-                <input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>"required>
+                <label for="username"></label><input type="text" name="username" id="username" placeholder="User Name" value="<?php getInputValue("username")?>" required>
                 
                 <?php echo $account->getError(Constants::$emailsDontMatch); ?>
                 <?php echo $account->getError(Constants::$emailInvalid); ?>
                 <?php echo $account->getError(Constants::$emailTaken); ?>
-                <input type="email" name="email" id="email" placeholder="Email" value="<?php getInputValue("email")?>"required>
-                <input type="email" name="email2" id="email2" placeholder="Confirm Email" required>
+                <label for="email"></label><input type="email" name="email" id="email" placeholder="Email" value="<?php getInputValue("email")?>" required>
+                <label for="email2"></label><input type="email" name="email2" id="email2" placeholder="Confirm Email" required>
                 
                 <?php echo $account->getError(Constants::$passwordsDontMatch); ?>
                 <?php echo $account->getError(Constants::$passwordLength); ?>
-                <input type="password" name="password" id="password" placeholder="Password" required>
-                <input type="password" name="password2" id="password2" placeholder="Confirm Password" required>
+                <label for="password"></label><input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="password2"></label><input type="password" name="password2" id="password2" placeholder="Confirm Password" required>
                 
                 <input type="submit" name="submitButton" id="submitButton" value="SUBMIT">
           
